@@ -137,6 +137,48 @@ padding-top: 120px;
     background-color: rgba(236, 235, 241, 0.95);
 }
 
+.animated_button{
+  border: 1px solid;
+
+}
+
+#animated_button {
+  color: white;
+  background-color:#494663;
+  bottom: 5px;
+  left: 5px;
+
+  height: 30px;
+  width: 130px;
+  border: none;
+  position: absolute;
+}
+#animated_button:hover{
+  animation-name: move;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+  animation-direction: reverse;
+}
+
+.animated_button {
+  position: relative;
+  height: 30px;
+  width: 130px;
+
+  border: 1px solid #494663;
+}
+
+@keyframes move {
+  to{
+      bottom: 5px;left: 5px;
+  }
+
+  from{
+      bottom: 0px;left: 0px;
+  }
+}
+
+
 
 
   /* RESPONSIVE NAVBAR MENU STARTS */
